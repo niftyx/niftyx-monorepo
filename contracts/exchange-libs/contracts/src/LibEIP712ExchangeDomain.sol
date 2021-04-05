@@ -24,7 +24,7 @@ import "@0x/contracts-utils/contracts/src/LibEIP712.sol";
 contract LibEIP712ExchangeDomain {
 
     // EIP712 Exchange Domain Name value
-    string constant internal _EIP712_EXCHANGE_DOMAIN_NAME = "0x Protocol";
+    string constant internal _EIP712_EXCHANGE_DOMAIN_NAME = "Niftyx Protocol";
 
     // EIP712 Exchange Domain Version value
     string constant internal _EIP712_EXCHANGE_DOMAIN_VERSION = "3.0.0";

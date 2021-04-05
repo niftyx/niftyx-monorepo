@@ -55,9 +55,9 @@ describe('ZRXToken', () => {
             expect(Web3Wrapper.toUnitAmount(totalSupply, 18)).to.be.bignumber.equal(expectedTotalSupply);
         });
 
-        it('should be named 0x Protocol Token', async () => {
+        it('should be named Niftyx Protocol Token', async () => {
             const name = await zrxToken.name().callAsync();
-            const expectedName = '0x Protocol Token';
+            const expectedName = 'Niftyx Protocol Token';
             expect(name).to.be.equal(expectedName);
         });
 

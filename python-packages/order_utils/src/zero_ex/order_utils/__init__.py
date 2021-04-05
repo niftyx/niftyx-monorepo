@@ -62,7 +62,7 @@ class _Constants:
 
     eip712_domain_struct_header = (
         eip712_domain_separator_schema_hash
-        + keccak(b"0x Protocol")
+        + keccak(b"Niftyx Protocol")
         + keccak(b"3.0.0")
     )
 

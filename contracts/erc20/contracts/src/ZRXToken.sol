@@ -138,8 +138,8 @@ contract ZRXToken is
     // solhint-disable const-name-snakecase
     uint8 constant public decimals = 18;
     uint256 public totalSupply = 10**27; // 1 billion tokens, 18 decimal places
-    string constant public name = "0x Protocol Token";
-    string constant public symbol = "ZRX";
+    string constant public name = "Niftyx Protocol Token";
+    string constant public symbol = "NPT";
     // solhint-enableconst-name-snakecase
 
     function ZRXToken()

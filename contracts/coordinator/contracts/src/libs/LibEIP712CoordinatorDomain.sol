@@ -24,7 +24,7 @@ import "@0x/contracts-utils/contracts/src/LibEIP712.sol";
 contract LibEIP712CoordinatorDomain {
 
     // EIP712 Domain Name value for the Coordinator
-    string constant public EIP712_COORDINATOR_DOMAIN_NAME = "0x Protocol Coordinator";
+    string constant public EIP712_COORDINATOR_DOMAIN_NAME = "Niftyx Protocol Coordinator";
 
     // EIP712 Domain Version value for the Coordinator
     string constant public EIP712_COORDINATOR_DOMAIN_VERSION = "3.0.0";

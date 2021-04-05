@@ -109,7 +109,7 @@ describe('signTypedDataUtils', () => {
                 ],
             },
             domain: {
-                name: '0x Protocol',
+                name: 'Niftyx Protocol',
                 version: '2',
                 chainId: 1337,
                 verifyingContract: '0x0000000000000000000000000000000000000000',

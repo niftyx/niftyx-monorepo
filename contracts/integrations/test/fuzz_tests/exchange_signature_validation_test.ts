@@ -533,7 +533,7 @@ tests('Exchange signature validation fuzz tests', env => {
             domain: {
                 chainId,
                 verifyingContract: exchange.address,
-                name: '0x Protocol',
+                name: 'Niftyx Protocol',
                 version: '3.0.0',
             },
             gasPrice: Pseudorandom.integer(1e9, 100e9),
