@@ -16,6 +16,9 @@
             "type": "string",
             "pattern": "^0x[0-9a-f]*$"
         },
+        "chainId": {
+            "type": "string"
+        },
         "nonce": {
             "type": "number",
             "minimum": 0

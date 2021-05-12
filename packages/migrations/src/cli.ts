@@ -21,6 +21,10 @@ const args = yargs
         describe: 'Private key for the `from` address',
         type: 'string',
     })
+    .option('chain-id', {
+        describe: 'Chain Id',
+        type: 'string',
+    })
     .example(
         '$0 --rpc-url http://localhost:8545 --from 0x5409ed021d9299bf6814279a6a1411a7e866a631 --pk 0xf2f48ee19680706196e2e339e5da3491186e0c4c5030670656b0e0164837257d',
         'Full usage example',
@@ -29,6 +33,7 @@ const args = yargs
 (async () => {
     const rpcSubprovider = new RPCSubprovider(args['rpc-url']);
     const provider = new Web3ProviderEngine();
+    const chainId = args['chain-id']
 
     if (args.pk !== undefined && args.pk !== '') {
         const pkSubprovider = new PrivateKeyWalletSubprovider(args.pk as string);
@@ -40,6 +45,7 @@ const args = yargs
     const normalizedFromAddress = (args.from as string).toLowerCase();
     const txDefaults = {
         from: normalizedFromAddress,
+        chainId,
     };
     await runMigrationsAsync(provider, txDefaults);
     process.exit(0);

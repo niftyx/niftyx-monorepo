@@ -393,6 +393,7 @@ export interface CallTxDataBase {
     gasPrice?: number | string | BigNumber;
     data?: string;
     nonce?: number;
+    chainId?: number | string | BigNumber;
 }
 
 export interface TxData extends CallTxDataBase {
